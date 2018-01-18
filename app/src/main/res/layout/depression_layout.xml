@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/depression_background">
+
+
+    <include
+        android:id="@+id/mCustomToolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/picture_test1"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mCustomToolbar" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:elevation="50dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        app:layout_constraintVertical_weight="0.3"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="What did you see first?"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:textSize="@dimen/big_text" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="left|top">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/white"
+                    android:checked="false"
+                    android:onClick="onClick"
+                    android:text="Face"
+                    android:textSize="@dimen/radio_button_text_size"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/white"
+                    android:checked="false"
+                    android:onClick="onClick"
+                    android:text="Apples"
+                    android:textSize="@dimen/radio_button_text_size"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/white"
+                    android:checked="false"
+                    android:onClick="onClick"
+                    android:text="Person Sitting"
+                    android:textSize="@dimen/radio_button_text_size"
+                    android:textColor="@android:color/white" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rectangle_round_corner_filled_inverse"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        android:text="Next >>"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="normal"
+        app:layout_constraintVertical_weight="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

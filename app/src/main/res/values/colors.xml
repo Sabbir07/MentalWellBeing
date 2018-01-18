@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#454545</color>-->
+    <color name="colorPrimary">#060c24</color>
+    <color name="colorPrimaryDark">#060c24</color>
+    <!--<color name="colorPrimaryDark">#3b3b3b</color>-->
+    <color name="colorAccent">#FF4081</color>
+    <color name="primaryText">#ffffff</color>
+
+    <color name="iconTintColorFrontPageButton">#0187d0</color>
+    <color name="blueColorForButton">#006094</color>
+    <color name="textHintColor">#7c7c7c</color>
+    <color name="black">#000000</color>
+    <color name="layout_background_color">#006094</color>
+    <color name="editTextBaseColor">#aaa</color>
+    <color name="editTextCursorColor">#aaa</color>
+</resources>

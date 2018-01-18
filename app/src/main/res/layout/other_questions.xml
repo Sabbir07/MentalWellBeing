@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/mCustomToolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--layout height must be 0 to work like percentage-->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearbutton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mCustomToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_corner_filled"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="What Should you do when your friend feel sick?"
+                    android:textColor="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left|top">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Give some medicine"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Try to find out problems"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Meet with medical consultant"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Ignore"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:onClick="onClick"
+                            android:text="Others"
+                            android:textColor="@android:color/darker_gray" />
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/radioGroup"
+                        android:layout_marginLeft="3dp"
+                        android:hint="Write here"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:textColor="@android:color/darker_gray"
+                        android:textColorHint="@color/textHintColor"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/font_size_home_page" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_corner_filled"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="What should you do when your friends feel alone?"
+                    android:textColor="@android:color/darker_gray" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left|top">
+
+                    <RadioButton
+                        android:id="@+id/radioButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:checked="false"
+                        android:text="Give him company"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:checked="false"
+                        android:text="Visit historical place with your friends"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:checked="false"
+                        android:text="Messaging/Chatting"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton9_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:checked="false"
+                        android:onClick="onClick"
+                        android:text="Others"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="Write here"
+                        android:inputType="textMultiLine"
+                        android:textColor="@android:color/darker_gray"
+                        android:textColorHint="@color/textHintColor"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/font_size_home_page" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_corner_filled"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="What is matched with your behaviour?"
+                    android:textColor="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left|top">
+
+                        <RadioButton
+                            android:id="@+id/radioButton10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Aggression"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Self injury"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Disruption/tantrums"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Inappropriate language"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Social withdrawal/Isolation"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton14_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Running away"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton14_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:onClick="onClick"
+                            android:text="Other"
+                            android:textColor="@android:color/darker_gray" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/editText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/radioGroup3"
+                        android:layout_marginLeft="3dp"
+                        android:hint="Write here"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:textColor="@android:color/darker_gray"
+                        android:textColorHint="@color/textHintColor"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/font_size_home_page" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_corner_filled"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="What is the reason that divided you to take a decision?"
+                    android:textColor="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left|top">
+
+                        <RadioButton
+                            android:id="@+id/radioButton15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Confusion"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Analysis"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Nervousness"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Afraid"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:onClick="onClick"
+                            android:text="Others"
+                            android:textColor="@android:color/darker_gray" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/editText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/radioGroup4"
+                        android:layout_marginLeft="3dp"
+                        android:hint="Write here"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:textColor="@android:color/darker_gray"
+                        android:textColorHint="@color/textHintColor"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/font_size_home_page" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_corner_filled"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="How you take a decision?"
+                    android:textColor="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left|top">
+
+                        <RadioButton
+                            android:id="@+id/radioButton20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Suddenly"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Discussion with friends or family members"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Thinking and Analysing"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:onClick="onClick"
+                            android:text="Others"
+                            android:textColor="@android:color/darker_gray" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/editText6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/radioGroup5"
+                        android:layout_marginLeft="3dp"
+                        android:hint="Write here"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:textColor="@android:color/darker_gray"
+                        android:textColorHint="@color/textHintColor"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/font_size_home_page" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_round_corner_filled"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="Do you have any Medical History?"
+                    android:textColor="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left|top">
+
+                        <RadioButton
+                            android:id="@+id/radioButton24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Head injury/stroke"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Loss of consciousness"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Nervousness"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Kidney disease"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:text="Heart/vascular problems"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/darker_gray"
+                            android:checked="false"
+                            android:onClick="onClick"
+                            android:text="Others"
+                            android:textColor="@android:color/darker_gray" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/editText7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/radioGroup6"
+                        android:layout_marginLeft="3dp"
+                        android:hint="Write here"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:textColor="@android:color/darker_gray"
+                        android:textColorHint="@color/textHintColor"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/font_size_home_page" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/paddingLeftandRight"
+            android:layout_marginTop="@dimen/paddingLeftandRight"
+            android:background="@drawable/rectangle_round_corner_filled_inverse"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Submit"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
