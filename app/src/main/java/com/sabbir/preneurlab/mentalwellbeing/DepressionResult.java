@@ -25,10 +25,13 @@ public class DepressionResult extends AppCompatActivity{
         //setting action bar icon and text properties
         Toolbar toolbar = findViewById(R.id.mCustomToolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("  Mental App");
+        //getSupportActionBar().setTitle("  Mental App");
         getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
         toolbar.setTitleTextColor(getResources().getColor(R.color.primaryText));
 
+        TextView toolbarText = toolbar.findViewById(R.id.toolBarTextView);
+        toolbarText.setTypeface(raleway);
+        toolbarText.setText("  Mental Health");
 
 
         String s = getIntent().getStringExtra("sum_value");

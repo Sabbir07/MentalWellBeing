@@ -6,4 +6,11 @@
     android:layout_marginBottom="50dp"
     android:background="@color/colorPrimary">
 
+    <TextView
+        android:id="@+id/toolBarTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/big_text"
+        android:text="Toolbar Title"
+        android:textColor="@android:color/white"/>
 </android.support.v7.widget.Toolbar>

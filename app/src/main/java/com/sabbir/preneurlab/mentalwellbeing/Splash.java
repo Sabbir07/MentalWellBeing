@@ -1,12 +1,14 @@
 package com.sabbir.preneurlab.mentalwellbeing;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 /**
@@ -29,6 +31,11 @@ public class Splash extends AppCompatActivity {
         getSupportActionBar().setTitle("  Mental Health");
         getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
         toolbar.setTitleTextColor(getResources().getColor(R.color.iconTintColorFrontPageButton));
+
+        Typeface raleway = Typeface.createFromAsset(this.getAssets(), "Raleway-Regular.ttf");
+        TextView toolbarText = toolbar.findViewById(R.id.toolBarTextView);
+        toolbarText.setTypeface(raleway);
+        toolbarText.setText("  Mental Health");
 
 
         /*// splash screen timing

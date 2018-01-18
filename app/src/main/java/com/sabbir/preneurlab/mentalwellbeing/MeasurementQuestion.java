@@ -2,6 +2,7 @@ package com.sabbir.preneurlab.mentalwellbeing;
 
 import android.content.Intent;
 import android.graphics.PorterDuff;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -44,9 +45,15 @@ public class MeasurementQuestion extends AppCompatActivity{
         //setting action bar icon and text properties
         Toolbar toolbar = findViewById(R.id.mCustomToolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("  Measurement Question");
+        //getSupportActionBar().setTitle("  Measurement Question");
         getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
         toolbar.setTitleTextColor(getResources().getColor(R.color.iconTintColorFrontPageButton));
+
+        Typeface raleway = Typeface.createFromAsset(this.getAssets(), "Raleway-Regular.ttf");
+        TextView toolbarText = toolbar.findViewById(R.id.toolBarTextView);
+        toolbarText.setTypeface(raleway);
+        toolbarText.setText("  Mental Health");
+
 
         // customizing the underline's color
 
