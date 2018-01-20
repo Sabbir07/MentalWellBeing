@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/depression_background">
+
+
+    <include
+        android:id="@+id/mCustomToolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/relative1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#27ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintTop_toBottomOf="@+id/mCustomToolbar">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Your Mental Wellbeing Score"
+            android:textSize="@dimen/big_text_second"
+            android:textColor="@android:color/white" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/custom_progress3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="15dp"
+            android:max="21"
+            android:progress="1"
+            android:layout_below="@id/textView_score"/>
+
+        <TextView
+            android:id="@+id/textView_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/polygon1"
+            android:paddingTop="5dp"
+            android:backgroundTint="#fef820"
+            android:layout_alignParentRight="true"
+            android:text="22"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center|center_horizontal"
+            android:textColor="#f90004" />
+
+        <TextView
+            android:id="@+id/textView_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_alignLeft="@+id/progressBar"
+            android:layout_below="@+id/progressBar"/>
+
+        <TextView
+            android:id="@+id/textView_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_alignRight="@+id/progressBar"
+            android:layout_below="@+id/progressBar"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

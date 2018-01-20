@@ -61,7 +61,7 @@ public class DepressionClass extends AppCompatActivity{
         radioButton3.setTypeface(raleway);
 
 
-        final Intent intent = new Intent(getBaseContext(), DepressionResult.class);
+        //final Intent intent = new Intent(getBaseContext(), DepressionResult.class);
 
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,6 +134,10 @@ public class DepressionClass extends AppCompatActivity{
                     a=8;
                     Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
 
+                } else if (a==8){
+                    sum = sum + b;
+                    a=9;
+                    Intent intent = new Intent(getBaseContext(), DepressionResult.class);
                     intent.putExtra("sum_value", Integer.toString(sum));
                     startActivity(intent);
                 }

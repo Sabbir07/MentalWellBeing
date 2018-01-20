@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 /**
@@ -18,7 +19,7 @@ public class DepressionResult extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.depression_result);
+        setContentView(R.layout.depression_result_2);
 
         Typeface raleway = Typeface.createFromAsset(this.getAssets(), "Raleway-Regular.ttf");
 
@@ -30,6 +31,11 @@ public class DepressionResult extends AppCompatActivity{
         toolbar.setTitleTextColor(getResources().getColor(R.color.primaryText));
 
         TextView toolbarText = toolbar.findViewById(R.id.toolBarTextView);
+        TextView textView2 = findViewById(R.id.textView_2);
+        TextView textView4 = findViewById(R.id.textView_4);
+        TextView textView_score = findViewById(R.id.textView_score);
+        ProgressBar progressBar = findViewById(R.id.progressBar);
+
         toolbarText.setTypeface(raleway);
         toolbarText.setText("  Mental Health");
 
@@ -37,7 +43,16 @@ public class DepressionResult extends AppCompatActivity{
         String s = getIntent().getStringExtra("sum_value");
 
         textView = findViewById(R.id.textView);
-        textView.setText("Your Score is\n\n" + s);
+        textView.setText("Your Mental Wellbeing Score");
         textView.setTypeface(raleway);
+        textView_score.setText(s);
+        textView_score.setTypeface(raleway);
+
+
+
+        textView2.setText("0");
+        int ss = progressBar.getMax();
+        textView4.setText(Integer.toString(ss));
+
     }
 }
