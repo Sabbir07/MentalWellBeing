@@ -88,5 +88,16 @@
             android:layout_alignRight="@+id/progressBar"
             android:layout_below="@+id/progressBar"/>
 
+        <Button
+            android:id="@+id/like"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/textView_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rectangle_round_corner_filled_for_home_page_button"
+            android:drawableTint="@color/violet2"
+            android:drawableTop="@drawable/thumbs_up1"
+            android:padding="30dp" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

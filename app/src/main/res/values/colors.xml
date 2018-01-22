@@ -15,7 +15,8 @@
     <color name="editTextBaseColor">#aaa</color>
     <color name="editTextCursorColor">#aaa</color>
 
-    <color name="homebutton_background">#ec9640</color>
+    <color name="homebutton_background">#ffffff</color>
     <!--<color name="splash_screen_background">#463953</color>-->
     <color name="splash_screen_background">#4c2f69</color>
+    <color name="violet2">#591491</color>
 </resources>

@@ -21,11 +21,11 @@ public class Splash extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash);
+        setContentView(R.layout.flash_screen);
 
 
 
-        //setting action bar icon and text properties
+        /*//setting action bar icon and text properties
         Toolbar toolbar = findViewById(R.id.mCustomToolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("  Mental Health");
@@ -37,16 +37,21 @@ public class Splash extends AppCompatActivity {
         toolbarText.setTypeface(raleway);
         toolbarText.setText("  Mental Health");
 
+*/
 
-        /*// splash screen timing
+        Typeface raleway = Typeface.createFromAsset(this.getAssets(), "Raleway-Regular.ttf");
+        TextView textView = findViewById(R.id.textView);
+        textView.setTypeface(raleway);
+        // splash screen timing
         int secondsDelayed = 2;
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                startActivity(new Intent(Splash.this, MainActivity.class));
+                startActivity(new Intent(Splash.this, AppInfoActivity.class));
                 finish();
             }
-        }, secondsDelayed * 1000);*/
+        }, secondsDelayed * 1000);
 
+/*
         ViewFlipper viewFlipper = findViewById(R.id.flipperid);
         viewFlipper.startFlipping();
 
@@ -56,7 +61,7 @@ public class Splash extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(Splash.this, MeasurementQuestion.class));
             }
-        });
+        });*/
 
     }
 }

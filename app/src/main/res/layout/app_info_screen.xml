@@ -31,18 +31,20 @@
 
     <!-- layout margin right left wouldn't work until inside constratint is given, which is not to the parent  -->
     <TextView
+        android:id="@+id/infoText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="15dp"
-        android:background="#18ffffff"
+        android:background="@drawable/background_gradient"
         android:paddingBottom="15dp"
         android:paddingLeft="7dp"
         android:paddingRight="7dp"
         android:paddingTop="15dp"
         android:text="The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.\n\nThe quick brown fox jumps over the lazy dog."
         android:textColor="@android:color/white"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

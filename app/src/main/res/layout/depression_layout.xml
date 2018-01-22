@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
-            android:text="What did you see first?"
+            android:text="1. What did you see first?"
             android:textColor="@android:color/white"
             android:textStyle="normal"
             android:textAllCaps="false"
@@ -66,6 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
+                android:paddingLeft="20dp"
                 android:gravity="left|top">
 
                 <RadioButton
@@ -110,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/rectangle_round_corner_filled_inverse"
+        android:background="@drawable/rectangle_round_corner_filled_inverse2"
         android:paddingLeft="55dp"
         android:paddingRight="55dp"
         android:text="Next >>"

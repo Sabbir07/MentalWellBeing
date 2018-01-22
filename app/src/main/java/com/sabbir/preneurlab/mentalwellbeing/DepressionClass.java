@@ -71,7 +71,7 @@ public class DepressionClass extends AppCompatActivity{
                     sum = sum + b;
                     //radioGroup.clearCheck();
                     imageView.setImageResource(R.drawable.picturetest2);
-                    textView.setText("What Did You See First?");
+                    textView.setText("2. What Did You See First?");
                     radioButton.setText("A Car");
                     radioButton2.setText("Man with Binoculars");
                     radioButton3.setText("Letter 'A'");
@@ -82,7 +82,7 @@ public class DepressionClass extends AppCompatActivity{
                     sum = sum + b;
                     //radioGroup.clearCheck();
                     imageView.setImageResource(R.drawable.picturetest3);
-                    textView.setText("What Did You See First?");
+                    textView.setText("3. What Did You See First?");
                     radioButton.setText("Bowling pins");
                     radioButton2.setText("Footprints");
                     radioButton3.setText("Nesting dolls");
@@ -93,7 +93,7 @@ public class DepressionClass extends AppCompatActivity{
                     sum = sum + b;
                     //radioGroup.clearCheck();
                     imageView.setImageResource(R.drawable.picturetest4);
-                    textView.setText("What Did You See First?");
+                    textView.setText("4. What Did You See First?");
                     radioButton.setText("Apple");
                     radioButton2.setText("Butterfly");
                     radioButton3.setText("Knife");
@@ -104,7 +104,7 @@ public class DepressionClass extends AppCompatActivity{
                     sum = sum + b;
                     //radioGroup.clearCheck();
                     imageView.setImageResource(R.drawable.picturetest5);
-                    textView.setText("What Did You See First?");
+                    textView.setText("5. What Did You See First?");
                     radioButton.setText("A Face");
                     radioButton2.setText("A Dog");
                     radioButton3.setText("A Precipice");
@@ -115,7 +115,7 @@ public class DepressionClass extends AppCompatActivity{
                     sum = sum + b;
                     //radioGroup.clearCheck();
                     imageView.setImageResource(R.drawable.picturetest6);
-                    textView.setText("What Did You See First?");
+                    textView.setText("6. What Did You See First?");
                     radioButton.setText("Crocodile");
                     radioButton2.setText("Mountains & Water");
                     radioButton3.setText("People in a boat");
@@ -126,7 +126,7 @@ public class DepressionClass extends AppCompatActivity{
                     sum = sum + b;
                     //radioGroup.clearCheck();
                     imageView.setImageResource(R.drawable.picturetest7);
-                    textView.setText("What Did You See First?");
+                    textView.setText("7. What Did You See First?");
                     radioButton.setText("A Whale");
                     radioButton2.setText("Moon & Light on Water");
                     radioButton3.setText("A person surfing");

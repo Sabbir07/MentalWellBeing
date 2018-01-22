@@ -8,7 +8,7 @@
 
     <solid
         android:color="@color/homebutton_background"/>
-    <corners android:radius="10dp"/>
+    <corners android:radius="1000dp"/>
 </shape>
 
 
