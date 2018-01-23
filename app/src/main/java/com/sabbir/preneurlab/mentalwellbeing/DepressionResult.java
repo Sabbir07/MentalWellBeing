@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -37,6 +38,17 @@ public class DepressionResult extends AppCompatActivity{
         TextView textView2 = findViewById(R.id.textView_2);
         TextView textView4 = findViewById(R.id.textView_4);
         TextView textView_score = findViewById(R.id.textView_score);
+        TextView textviewlike = findViewById(R.id.textView_5);
+        TextView textviewdescription = findViewById(R.id.textView_6);
+        Button buttonimprove = findViewById(R.id.buttonImroveYourself);
+        Button buttonhome = findViewById(R.id.buttonHome);
+
+        textviewlike.setTypeface(raleway);
+        textviewdescription.setTypeface(raleway);
+        buttonimprove.setTypeface(raleway);
+        buttonhome.setTypeface(raleway);
+
+
         final ProgressBar progressBar = findViewById(R.id.progressBar);
 
         toolbarText.setTypeface(raleway);

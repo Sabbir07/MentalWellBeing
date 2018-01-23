@@ -9,6 +9,8 @@
     <solid
         android:color="@color/homebutton_background"/>
     <corners android:radius="1000dp"/>
+    <stroke android:width="2dp"
+        android:color="@color/violet2"/>
 </shape>
 
 

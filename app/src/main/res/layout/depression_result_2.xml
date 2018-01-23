@@ -16,77 +16,78 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
+
     <RelativeLayout
         android:id="@+id/relative1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
         android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
         android:background="#27ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0"
-        app:layout_constraintTop_toBottomOf="@+id/mCustomToolbar">
+        app:layout_constraintTop_toBottomOf="@+id/mCustomToolbar"
+        app:layout_constraintVertical_bias="0">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
             android:paddingTop="10dp"
             android:text="Your Mental Wellbeing Score"
-            android:textSize="@dimen/big_text_second"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/big_text_second" />
 
 
         <ProgressBar
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
-            android:progressDrawable="@drawable/custom_progress3"
             android:layout_width="match_parent"
             android:layout_height="20dp"
+            android:layout_below="@id/textView_score"
             android:layout_marginLeft="7dp"
             android:layout_marginRight="7dp"
             android:layout_marginTop="15dp"
             android:max="21"
             android:progress="1"
-            android:layout_below="@id/textView_score"/>
+            android:progressDrawable="@drawable/custom_progress3" />
 
         <TextView
             android:id="@+id/textView_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/polygon1"
-            android:paddingTop="5dp"
-            android:backgroundTint="#fef820"
             android:layout_alignParentRight="true"
-            android:text="22"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/polygon1"
+            android:backgroundTint="#fef820"
             android:gravity="center|center_horizontal"
-            android:textColor="#f90004" />
+            android:paddingTop="5dp"
+            android:text="22"
+            android:textColor="#f90004"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#fff"
             android:layout_alignLeft="@+id/progressBar"
-            android:layout_below="@+id/progressBar"/>
+            android:layout_below="@+id/progressBar"
+            android:textColor="#fff" />
 
         <TextView
             android:id="@+id/textView_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#fff"
             android:layout_alignRight="@+id/progressBar"
-            android:layout_below="@+id/progressBar"/>
+            android:layout_below="@+id/progressBar"
+            android:textColor="#fff" />
 
         <Button
             android:id="@+id/like"
@@ -99,5 +100,71 @@
             android:drawableTint="@color/violet2"
             android:drawableTop="@drawable/thumbs_up1"
             android:padding="30dp" />
+
+        <TextView
+            android:id="@+id/textView_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/like"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Great job"
+            android:textColor="#fff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/textView_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_5"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Great job Great job Great job Great job Great job Great job Great job Great job Great job Great job Great job "
+            android:textColor="#fff"
+            android:textSize="17dp" />
+
     </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/buttonImroveYourself"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_round_corner_filled_4"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="2dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonHome"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/rectangle_round_corner_filled_4"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="Improve Yourself"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toRightOf="@+id/buttonImroveYourself"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

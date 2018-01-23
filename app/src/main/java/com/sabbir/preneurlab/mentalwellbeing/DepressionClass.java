@@ -76,7 +76,7 @@ public class DepressionClass extends AppCompatActivity{
                     radioButton2.setText("Man with Binoculars");
                     radioButton3.setText("Letter 'A'");
                     a=3;
-                    Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
 
                 } else if (a==3){
                     sum = sum + b;
@@ -87,7 +87,7 @@ public class DepressionClass extends AppCompatActivity{
                     radioButton2.setText("Footprints");
                     radioButton3.setText("Nesting dolls");
                     a=4;
-                    Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
 
                 } else if (a==4){
                     sum = sum + b;
@@ -98,7 +98,7 @@ public class DepressionClass extends AppCompatActivity{
                     radioButton2.setText("Butterfly");
                     radioButton3.setText("Knife");
                     a=5;
-                    Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
 
                 } else if (a==5){
                     sum = sum + b;
@@ -109,7 +109,7 @@ public class DepressionClass extends AppCompatActivity{
                     radioButton2.setText("A Dog");
                     radioButton3.setText("A Precipice");
                     a=6;
-                    Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
 
                 } else if (a==6){
                     sum = sum + b;
@@ -120,7 +120,7 @@ public class DepressionClass extends AppCompatActivity{
                     radioButton2.setText("Mountains & Water");
                     radioButton3.setText("People in a boat");
                     a=7;
-                    Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
 
                 } else if (a==7){
                     sum = sum + b;
@@ -132,7 +132,7 @@ public class DepressionClass extends AppCompatActivity{
                     radioButton3.setText("A person surfing");
                     buttonNext.setText("Finish");
                     a=8;
-                    Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(DepressionClass.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
 
                 } else if (a==8){
                     sum = sum + b;
