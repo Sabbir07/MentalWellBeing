@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 /**
@@ -16,8 +15,10 @@ import android.widget.TextView;
 
 public class HomePage extends AppCompatActivity {
 
-    Button buttonmain1, addpair, mentalhealth, othertests,
-            improveyourself, analysis, mesutFeed;
+    Button buttonmain1, buttonmain2, addpair,
+            mentalhealth, othertests,
+            improveyourself, analysis,
+            mesutFeed;
 
     TextView buttonmain1_text, buttonmain2_text;
 
@@ -32,6 +33,7 @@ public class HomePage extends AppCompatActivity {
 
 
         buttonmain1 = findViewById(R.id.buttonmain1);
+        buttonmain2 = findViewById(R.id.buttonmain2);
         addpair = findViewById(R.id.button);
         mentalhealth = findViewById(R.id.buttonmain1);
         othertests = findViewById(R.id.buttonmain2);
@@ -44,6 +46,7 @@ public class HomePage extends AppCompatActivity {
 
 
         buttonmain1.setTypeface(raleway);
+        buttonmain2.setTypeface(raleway);
         addpair.setTypeface(raleway);
         mentalhealth.setTypeface(raleway);
         othertests.setTypeface(raleway);
@@ -56,9 +59,19 @@ public class HomePage extends AppCompatActivity {
         buttonmain1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomePage.this, DepressionClass.class);
+                Intent i = new Intent(HomePage.this, Depression.class);
                 startActivity(i);
             }
         });
+
+        buttonmain2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(HomePage.this, AngerIssue.class);
+                startActivity(i);
+            }
+        });
+
+
     }
 }

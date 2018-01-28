@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
     <!--<gradient
         android:startColor="@color/layout_background_color"
         android:centerColor="#d3d7cf"
@@ -10,7 +11,7 @@
         android:color="@color/homebutton_background"/>
     <corners android:radius="1000dp"/>
     <stroke android:width="2dp"
-        android:color="@color/violet2"/>
+        android:color="@color/orange2"/>
 </shape>
 
 

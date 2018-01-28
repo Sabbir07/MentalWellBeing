@@ -53,11 +53,16 @@
 
 
 
-        <activity android:name="com.sabbir.preneurlab.mentalwellbeing.DepressionClass"
+        <activity android:name="com.sabbir.preneurlab.mentalwellbeing.Depression"
             android:screenOrientation="portrait">
         </activity>
         <activity android:name="com.sabbir.preneurlab.mentalwellbeing.DepressionResult"
             android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.sabbir.preneurlab.mentalwellbeing.AngerIssue"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2">
         </activity>
     </application>
 

@@ -157,7 +157,7 @@ public class MeasurementQuestion extends AppCompatActivity{
                 Toast.makeText(MeasurementQuestion.this, Integer.toString(sum), Toast.LENGTH_SHORT).show();
                 if (sum >= 6 && sum <= 10)
                 {
-                    startActivity(new Intent(MeasurementQuestion.this, DepressionClass.class));
+                    startActivity(new Intent(MeasurementQuestion.this, Depression.class));
                 } else if (sum >= 2 && sum <= 5)
                 {
                     startActivity(new Intent(MeasurementQuestion.this, GeneralQuestion.class));

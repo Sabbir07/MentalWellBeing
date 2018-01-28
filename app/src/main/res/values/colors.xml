@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--<color name="colorPrimary">#454545</color>-->
-    <color name="colorPrimary">#060c24</color>
-    <color name="colorPrimaryDark">#060c24</color>
+    <color name="colorPrimary">#ffa300</color>
+    <color name="colorPrimaryDark">#a76b00</color>
     <!--<color name="colorPrimaryDark">#3b3b3b</color>-->
     <color name="colorAccent">#FF4081</color>
     <color name="primaryText">#ffffff</color>
@@ -18,5 +18,6 @@
     <color name="homebutton_background">#ffffff</color>
     <!--<color name="splash_screen_background">#463953</color>-->
     <color name="splash_screen_background">#4c2f69</color>
-    <color name="violet2">#591491</color>
+    <color name="orange2">#ffa300</color>
+    <color name="orangedark">#b97600</color>
 </resources>

@@ -25,7 +25,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="0dp"
-        android:background="#27ffffff"
+        android:background="#16ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +97,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="13dp"
             android:background="@drawable/rectangle_round_corner_filled_for_home_page_button"
-            android:drawableTint="@color/violet2"
+            android:drawableTint="@color/orange2"
             android:drawableTop="@drawable/thumbs_up1"
             android:padding="30dp" />
 

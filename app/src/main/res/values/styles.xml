@@ -16,21 +16,32 @@
 
         <!--<item name="android:actionBarStyle">@style/ActionBar</item>-->
     </style>
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<!--
 
     <style name="RobotoBoldTextAppearance">
-        <!--<item name="android:fontFamily">@assets/Raleway-Regular.ttf</item>-->
+        &lt;!&ndash;<item name="android:fontFamily">@assets/Raleway-Regular.ttf</item>&ndash;&gt;
         <item name="android:fontFamily"></item>
     </style>
 
+-->
 
+<!--
 
-    <!--for trasparency-->
+    &lt;!&ndash;for trasparency&ndash;&gt;
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
+-->
 
 <!--
     <style name="AppTheme.ActionBarStyle" parent="@android:style/Widget.ActionBar">

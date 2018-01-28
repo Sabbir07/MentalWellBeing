@@ -2,6 +2,7 @@ package com.sabbir.preneurlab.mentalwellbeing;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -29,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.mCustomToolbar);
         setSupportActionBar(toolbar);
         //getSupportActionBar().setTitle("  Mental Well Being");
-        getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
+        }
         toolbar.setTitleTextColor(getResources().getColor(R.color.iconTintColorFrontPageButton));
 
         Typeface raleway = Typeface.createFromAsset(this.getAssets(), "Raleway-Regular.ttf");
