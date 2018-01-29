@@ -1,6 +1,8 @@
 package com.sabbir.preneurlab.mentalwellbeing;
 
+import android.content.Intent;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -31,7 +33,9 @@ public class DepressionResult extends AppCompatActivity{
         Toolbar toolbar = findViewById(R.id.mCustomToolbar);
         setSupportActionBar(toolbar);
         //getSupportActionBar().setTitle("  Mental App");
-        getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
+        }
         toolbar.setTitleTextColor(getResources().getColor(R.color.primaryText));
 
         TextView toolbarText = toolbar.findViewById(R.id.toolBarTextView);
@@ -67,10 +71,15 @@ public class DepressionResult extends AppCompatActivity{
         //textView_score.setTypeface(raleway);
 
 
-
+        //start value
         textView2.setText("0");
-        int ss = progressBar.getMax();
-        textView4.setText(Integer.toString(ss));
+
+        //last max value
+        /*int ss = progressBar.getMax();
+        textView4.setText(Integer.toString(ss));*/
+
+        String maxrangestring = getIntent().getStringExtra("maxrange");
+        textView4.setText(maxrangestring);
 
 
 
@@ -79,7 +88,7 @@ public class DepressionResult extends AppCompatActivity{
             public void run() {
                 //while (progressStatus < 100) {
                 //while (progressStatus < progressBar.getMax()) {
-                while (progressStatus < ii) {
+                while (progressStatus <= ii) {
                     progressStatus += 1;
                     // Update the progress bar and display the
                     //current value in the text view
@@ -99,8 +108,5 @@ public class DepressionResult extends AppCompatActivity{
                 }
             }
         }).start();
-
-
-
     }
 }

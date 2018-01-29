@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Mental Well Being</string>
+
+
+    <string name="anger_question_1">1. I don’t show my anger about everything that makes me mad, but when I do – look out.</string>
+    <string name="anger_question_2">2. I still get angry when I think of the bad things people did to me in the past.</string>
+    <string name="anger_question_3">3. Waiting in line, or waiting for other people, really annoys me.</string>
+    <string name="anger_question_4">4. When someone hurts or frustrates me, I want to get even.</string>
+    <string name="anger_question_5">5. I often find myself having heated arguments with the people who are closest to me.</string>
+    <string name="anger_question_6">6. I sometimes lie awake at night and think about the things that upset me during the day.</string>
+    <string name="anger_question_7">7. When someone says or does something that upsets me, I don’t usually say anything at the time, but later spend a lot of time thinking up cutting replies I could and should have made.</string>
+    <string name="anger_question_8">8. I find it very hard to forgive someone who has done me wrong.</string>
+    <string name="anger_question_9">9. I get angry with myself when I lost control of my emotions.</string>
+    <string name="anger_question_10">10. People really irritate me when they don’t behave the way they should, or when they act like they don’t have the good sense of a head of lettuce.</string>
+    <string name="anger_question_11">11. If I get really upset about something, I have a tendency to feel sick later, either with a weak spell, headache, upset stomach, or diarrhea.</string>
+    <string name="anger_question_12">12. People I\'ve trusted have often let me down, leaving me feeling angry or betrayed.</string>
+    <string name="anger_question_13">13. When things don’t go my way, I get depressed.</string>
+    <string name="anger_question_14">14. I am apt to take frustration so badly that I cannot put it out of my mind.</string>
+    <string name="anger_question_15">15. I\'ve been so angry at times I couldn\'t remember things I said or did.</string>
+    <string name="anger_question_16">16. After arguing with someone, I hate myself.</string>
+    <string name="anger_question_17">17. I\'ve had trouble on the job because of my temper.</string>
+    <string name="anger_question_18">18. When riled up, I often blurt out things I later regret saying.</string>
+    <string name="anger_question_19">19. Some people are afraid of my bad temper.</string>
+    <string name="anger_question_20">20. When I get angry, frustrated or hurt, I comfort myself by eating or using alcohol or other drugs.</string>
+
+    <string name="true1">True</string>
+    <string name="false1">False</string>
+
+
 </resources>

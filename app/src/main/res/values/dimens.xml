@@ -10,4 +10,8 @@
     <dimen name="button_text_size">16dp</dimen>
     <dimen name="radio_button_text_size">20sp</dimen>
     <dimen name="big_text_second">20sp</dimen>
+
+
+    <dimen name="radio_button_anger_header_text_size">17sp</dimen>
+    <dimen name="radio_button_anger_text_size">16sp</dimen>
 </resources>

@@ -2,6 +2,7 @@ package com.sabbir.preneurlab.mentalwellbeing;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -22,7 +23,7 @@ public class Depression extends AppCompatActivity{
     RadioGroup radioGroup;
     TextView textView;
     ImageView imageView;
-    int a=2, b=0, sum=0;
+    private int a=2, b=0, sum=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,9 @@ public class Depression extends AppCompatActivity{
         Toolbar toolbar = findViewById(R.id.mCustomToolbar);
         setSupportActionBar(toolbar);
         //getSupportActionBar().setTitle("  Mental App");
-        getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getSupportActionBar().setIcon(getDrawable(R.drawable.ic_action_name));
+        }
         toolbar.setTitleTextColor(getResources().getColor(R.color.primaryText));
         //toolbar.setTitleTextAppearance(this, setTypeface(raleway));
         //((Toolbar)toolbar.getChildAt(1)).setTypeface(raleway);
