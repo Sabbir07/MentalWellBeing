@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class HomePage extends AppCompatActivity {
 
-    Button buttonmain1, buttonmain2, addpair,
+    private Button buttonmain1, buttonmain2, addpair,
             mentalhealth, othertests,
             improveyourself, analysis,
             mesutFeed;
@@ -59,7 +59,7 @@ public class HomePage extends AppCompatActivity {
         buttonmain1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomePage.this, Depression.class);
+                Intent i = new Intent(HomePage.this, FindOutPromptPage.class);
                 startActivity(i);
             }
         });
@@ -67,8 +67,8 @@ public class HomePage extends AppCompatActivity {
         buttonmain2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomePage.this, AngerIssue.class);
-                startActivity(i);
+                /*Intent i = new Intent(HomePage.this, AngerIssue.class);
+                startActivity(i);*/
             }
         });
 
